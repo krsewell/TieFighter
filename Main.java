@@ -104,7 +104,7 @@ public class Main {
       File input = new File("pilot_routes.txt");
       File output = new File("pilot_areas.txt");
 
-      //get input from file
+      //get input from file 
       parse(input,pilotnames,coord);
 
       //calculate and return data
