@@ -27,7 +27,8 @@ public class Main {
 
 
 		//print to file
-		for(int i = 0; i < names.length; i++) {
+		for(int i = 0; i < names.length; i++) {		//not names.length but last non-null cell.
+			if (names[i] == null) break;			//inserted line.
 			out.print(names[i]);
 			out.printf("\t%.2f\n",(0.5 * Math.abs(sum(data[i])))); //calculates the sum
 		}
@@ -40,12 +41,14 @@ public class Main {
 		for(int i = 1; i < data.length; i++) {
 			if (Arrays.equals(data[0], data[i])) {
 				lastPOS = i;
+				
 				break;
 			} 
 		}
 		//calculate and return the sum
 		double sum = 0;
-		for (int i = 0; i < lastPOS-2; i++) {
+		//for (int i = 0; i < lastPOS-2; i++) {
+		for (int i = 0; i < lastPOS; i++) {
 			sum += ((data[i+1][0] + data[i][0]) * (data[i+1][1] - data[i][1]));
 		}
 		return sum;
