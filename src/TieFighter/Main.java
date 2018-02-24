@@ -22,7 +22,7 @@ import java.io.FileNotFoundException;
 public class Main {
 
 
-	public static void area(File file, String[] names, Double[][][] data) throws FileNotFoundException {
+	private static void area(File file, String[] names, Double[][][] data) throws FileNotFoundException {
 		PrintWriter out = new PrintWriter(file);
 
 
@@ -54,7 +54,7 @@ public class Main {
 		return sum;
 	}
 
-	public static void parse(File file, String[] names, Double[][][] data) throws FileNotFoundException {
+	private static void parse(File file, String[] names, Double[][][] data) throws FileNotFoundException {
 		Scanner input = new Scanner(file);
 		int i = 0; //index for each pilot
 		
@@ -99,7 +99,7 @@ public class Main {
 			//allocated required resources
 			String[] pilotnames = new String[20];
 			Double[][][] coord = new Double[20][16][2];
-			File input = new File("pilot_routes.txt");
+			File input = new File("pilot_routes1.txt");
 			File output = new File("pilot_areas.txt");
 
 			//get input from file

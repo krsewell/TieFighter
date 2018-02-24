@@ -1,0 +1,7 @@
+Roger	913.09
+Allan	776.81
+George	53.50
+Sheldon	1731.95
+Cooper	776.81
+Jay	84.20
+Bob	6.42

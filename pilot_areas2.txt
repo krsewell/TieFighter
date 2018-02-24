@@ -1,0 +1,4 @@
+Joe	100.00
+Peter	83.20
+Jane	237.13
+James	69.00
